@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StylesSample.ImplicitStylePage" Title="Implicit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+                <x:String x:Key="currentDateTime">not really a datetime</x:String>
+
+
+                <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+            <Style TargetType="SearchBar">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor" Value="FloralWhite" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="PlaceholderColor" Value="Purple" />
+                <Setter Property="TextColor" Value="Cyan" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0,5,0,0">
+            <Label Text="These entries" />
+            <Label Text="are demonstrating" />
+            <Label Text="implicit styles," />
+            <Label Text="Label style" />
+            <SearchBar Placeholder="Search"  />
+            <!--Dynamic Resource vs Static Resource-->
+            <Label Text="{StaticResource currentDateTime}" />
+            <Label Text="{DynamicResource currentDateTime}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

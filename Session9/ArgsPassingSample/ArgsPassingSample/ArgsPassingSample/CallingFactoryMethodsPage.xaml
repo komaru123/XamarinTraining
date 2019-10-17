@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ArgsPassingSample"
+             x:Class="ArgsPassingSample.CallingFactoryMethodsPage"
+             Title="FactoryMethod">
+	<StackLayout Margin="20">
+		<Label Text="Calling Factory Methods from XAML" FontAttributes="Bold" HorizontalOptions="Center" />
+		<BoxView HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
+			<BoxView.Color>
+				<Color x:FactoryMethod="FromRgba">
+                  <x:Arguments>
+                       <x:Double>0.35</x:Double>
+                       <x:Double>0.15</x:Double>
+                       <x:Double>0.95</x:Double>
+                       <x:Double>0.5</x:Double>
+                   </x:Arguments>
+
+                </Color>
+			</BoxView.Color>
+		</BoxView>
+		<BoxView HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
+			<BoxView.Color>
+				<Color x:FactoryMethod="FromHsla">
+					<x:Arguments>
+                        <x:Double>0.25</x:Double>
+                        <x:Double>0.55</x:Double>
+                        <x:Double>0.95</x:Double>
+                        <x:Double>0.75</x:Double>
+                    </x:Arguments>
+				</Color>
+			</BoxView.Color>
+		</BoxView>
+		<BoxView HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
+			<BoxView.Color>
+				<Color x:FactoryMethod="FromHex">
+					<x:Arguments>
+						<x:String>#FF048B9A</x:String>
+					</x:Arguments>
+				</Color>
+			</BoxView.Color>
+		</BoxView>
+	</StackLayout>
+</ContentPage>
+<!--
+<x:Double>0.23</x:Double>
+<x:Double>0.42</x:Double>
+<x:Double>0.69</x:Double>
+<x:Double>0.7</x:Double>-->

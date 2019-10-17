@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PagesSample.MasterPage"
+             Title="I am master" MasterBehavior="SplitOnLandscape">
+
+            <MasterDetailPage.Master>
+                <ContentPage Padding="10" BackgroundColor="Gray" Title="Master">
+                    <ContentPage.Content>
+                        <StackLayout Margin="5,30,5,5">
+                            <Label Text="Master page Menu"></Label>
+                            <Button  x:Name="add" Text="Add Employee" BackgroundColor="Aquamarine" ></Button>
+                            <Button  x:Name="controltemplate"   Text="Control Template Page" BackgroundColor="Aquamarine"></Button>
+                            <Button  x:Name="carouselpg"   Text="Carousel Page" BackgroundColor="Aquamarine" ></Button>
+                            <Button  x:Name="tabbed" Text="Tabbed Page" BackgroundColor="Aquamarine" ></Button>
+                        </StackLayout>
+                    </ContentPage.Content>
+                </ContentPage>
+            </MasterDetailPage.Master>
+            <MasterDetailPage.Detail>
+                <ContentPage Padding="10">
+                    <ContentPage.Content>
+                        <StackLayout Margin="5,30,5,5">
+                            <Label Text="Detail Page"></Label>
+                        </StackLayout>
+                    </ContentPage.Content>
+                </ContentPage>
+            </MasterDetailPage.Detail>
+        </MasterDetailPage>  

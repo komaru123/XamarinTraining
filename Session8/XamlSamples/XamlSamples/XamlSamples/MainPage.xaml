@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamlSamples"
+             x:Class="XamlSamples.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Master">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Master page Menu"></Label>
+                    <Button  x:Name="statics" Text="X:Static"  ></Button>
+                    <Button  x:Name="reference" Text="X:Refernce" ></Button>
+                    <Button  x:Name="array" Text="X:Array"></Button>
+                    <Button  x:Name="nulls" Text="X:Null"></Button>
+                    <Button  x:Name="hslcolor" Text="HSL Color"></Button>
+                    <Button  x:Name="imgresource" Text="ImageResource"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+</MasterDetailPage>

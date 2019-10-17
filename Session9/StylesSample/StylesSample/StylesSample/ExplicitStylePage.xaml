@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StylesSample.ExplicitStylePage" Title="Explicit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="boxBlueStyle" TargetType="BoxView">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor" Value="Blue"/>
+                <Setter Property="HeightRequest" Value="90"/>
+            </Style>
+            <Style x:Key="labelGreenStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Green" />
+            </Style>
+            <Style x:Key="labelBlueStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0,5,0,0">
+            <BoxView Style="{StaticResource boxBlueStyle}" />
+            <Label Text="Demonstrating" Style="{StaticResource labelGreenStyle}" />
+            <Label Text="explicit styles," Style="{StaticResource labelBlueStyle}" />
+            <Label Text="and an explicit style override" Style="{StaticResource labelBlueStyle}" TextColor="Teal" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+    

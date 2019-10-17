@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ViewControlsSample"
+             x:Class="ViewControlsSample.MainPage">
+    <ScrollView >
+        <StackLayout Spacing="10" Orientation="Vertical" Margin="20">
+            <Label Text="Below are the BoxViews with different heights" FontAttributes="Italic" FontSize="Large" TextColor="BurlyWood"/>
+            <BoxView BackgroundColor="Aqua" HeightRequest="5"  />
+            <BoxView BackgroundColor="Aqua" HeightRequest="10"  />
+            <BoxView BackgroundColor="Aqua" HeightRequest="15"  />
+            <SearchBar HeightRequest="25" Placeholder="Search" VerticalOptions="FillAndExpand"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name :" TextColor="Blue" VerticalOptions="Center"/>
+                <Entry Placeholder="Name" HorizontalOptions="FillAndExpand" PlaceholderColor="CornflowerBlue"/>
+            </StackLayout>
+            <Picker Title="Select Gender"  HorizontalOptions="FillAndExpand"  >
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
+            </Picker>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Fresher:"/>
+                <Switch x:Name="fresherSelect"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Experience :" VerticalOptions="Center"/>
+                <Stepper Minimum="0" 
+                         Maximum="25" VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Date Of Birth:" VerticalOptions="Center"/>
+                <DatePicker MinimumDate="04/09/2014"
+                            MaximumDate="12/29/2018"
+                            />
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="submitbutton" BorderColor="Azure" BackgroundColor="Black" Text="Submit" TextColor="White" BorderRadius="2"/>
+                <ActivityIndicator x:Name="indicator" Color="Brown" IsRunning="True"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <TimePicker/>
+                <Image x:Name="rotatingImage" Source="icon"/>
+                <Slider Maximum="360"
+                        ValueChanged="OnSliderValueChanged"/>
+                <Label x:Name="rotationInfo"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="OpenGLView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+                <OpenGLView x:Name="openGLView"
+                    VerticalOptions="FillAndExpand"
+                          BackgroundColor="Aqua"/>
+
+                <!--<Label x:Name="regretsLabel"
+               Text="Sorry, OpenGLView cannot be used on this device!"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               Margin="10, 0" />-->
+            </StackLayout>
+            <StackLayout>
+                <Editor HeightRequest="100" Text="Editor"/>
+                <Label Text="Below is the WebView" FontSize="Medium" FontAttributes="Bold" TextColor="DarkMagenta"/>
+                <WebView HeightRequest="400" Source="https://docs.microsoft.com/en-us/xamarin/xamarin-forms"></WebView>
+            </StackLayout>
+          
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

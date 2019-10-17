@@ -1,0 +1,11 @@
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\bin\Debug\netstandard2.0\ViewControlsSample.deps.json
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\bin\Debug\netstandard2.0\ViewControlsSample.dll
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\bin\Debug\netstandard2.0\ViewControlsSample.pdb
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.csproj.CoreCompileInputs.cache
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.App.xaml.g.cs
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.MainPage.xaml.g.cs
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.AssemblyInfoInputs.cache
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.AssemblyInfo.cs
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.dll
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.pdb
+D:\XamarinProjects\ViewControlsSample\ViewControlsSample\ViewControlsSample\obj\Debug\netstandard2.0\ViewControlsSample.csprojResolveAssemblyReference.cache

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StylesSample.DynamicStylePage" Title="Dynamic">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="View">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HeightRequest" Value="60"/>
+            </Style>
+            <Style x:Key="blueEntryStyle" TargetType="Entry" BasedOn="{StaticResource baseStyle}">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="Blue" />
+                <Setter Property="PlaceholderColor" Value="Orange"/>
+                <Setter Property="Text" Value="Blue Entry Style"/>
+            </Style>
+            <Style x:Key="greenEntryStyle" TargetType="Entry">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="PlaceholderColor" Value="Cyan"/>
+                <Setter Property="Placeholder" Value="Green Entry Style"/>
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{StaticResource baseStyle}">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+            <Style x:Key="pinkLabelStyle" TargetType="Label" >
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Pink" />
+               
+            </Style>
+            <Style x:Key="blackLabelStyle" TargetType="Label" >
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="TextColor" Value="Black" />
+                
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="0,25,0,0" >
+            <Entry Placeholder="These are Entry controls" Style="{DynamicResource entryStyle}" />
+                <Entry Placeholder="demonstrating" Style="{DynamicResource entryStyle}" />
+            <Entry Placeholder="dynamic styles," Style="{DynamicResource entryStyle}" />
+                <Entry  Style="{StaticResource blueEntryStyle}" />
+                <Button Text="Change Style" Style="{StaticResource buttonStyle}" Clicked="OnButtonClicked" />
+                <Label Text="DynamicStyle check" Style="{DynamicResource labelStyle}"/>
+            </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

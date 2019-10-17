@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PagesSample.DetailsEmployee"  Title="Details" >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Details of employee!!" />
+            <Label x:Name="name"></Label>
+            <Label x:Name="address"></Label>
+            <Label x:Name="designation"></Label>
+            <Button Text="Save"></Button>
+            <Button Text="Edit" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+  <!--Clicked="Button_Clicked"   Clicked="Button_Clicked_1"-->
